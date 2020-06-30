@@ -1,0 +1,16 @@
+%tpl{
+	border-bottom: 5px solid green;
+}
+a{
+	color:black;
+	text-decoration: underline;
+	@extend %tpl;
+	border-bottom: 5px solid pink;
+	.block &{
+		color:red;
+		@extend %tpl;
+	}
+	&:hover{
+		color:blue;
+	}
+}

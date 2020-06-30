@@ -1,0 +1,34 @@
+@import "import_style.scss";
+$k:pink;
+/*@mixin fontz($k,$c){
+	color:$k;
+	text-decoration: $c;
+}*/
+@mixin fontz($k,$c){
+	color:$k;
+	text-decoration: $c;
+}
+$fz:45px;
+
+.block{
+	background-color: gray;
+	width: 300px/960px*100%;
+	color:blue;
+	font-size: $fz;
+	&.block2{
+		font-size: $fz;
+	}
+	>p{
+		color:green;
+	}
+	.block_text{
+		font-size: $fz;
+		p{
+			@include fontz($k,underline);
+		}
+		span{
+		@include fontz($k,none);
+		}
+	}
+
+}

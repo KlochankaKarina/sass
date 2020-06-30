@@ -1,0 +1,33 @@
+a, .block a {
+  border-bottom: 5px solid green; }
+
+a {
+  color: black;
+  text-decoration: underline;
+  border-bottom: 5px solid pink; }
+  .block a {
+    color: red; }
+  a:hover {
+    color: blue; }
+
+/*@mixin fontz($k,$c){
+	color:$k;
+	text-decoration: $c;
+}*/
+.block {
+  background-color: gray;
+  width: 31.25%;
+  color: blue;
+  font-size: 45px; }
+  .block.block2 {
+    font-size: 45px; }
+  .block > p {
+    color: green; }
+  .block .block_text {
+    font-size: 45px; }
+    .block .block_text p {
+      color: pink;
+      text-decoration: underline; }
+    .block .block_text span {
+      color: pink;
+      text-decoration: none; }
